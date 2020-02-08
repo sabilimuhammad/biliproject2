@@ -1,0 +1,21 @@
+<template>
+    <div class="square">
+        <h1>{{child1}}</h1>
+    </div>
+</template>
+
+<script>
+export default {
+    props: {
+        child1:Number,
+    }
+}
+</script>
+<style>
+.square{
+    border: 2px solid blue;
+    height: 100px;
+    width: 100px;
+}
+
+</style>
