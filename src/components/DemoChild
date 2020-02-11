@@ -12,10 +12,10 @@ export default {
 }
 </script>
 <style>
-.square{
+/* .square{
     border: 2px solid blue;
     height: 100px;
     width: 100px;
-}
+} */
 
 </style>

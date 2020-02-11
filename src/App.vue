@@ -2,20 +2,23 @@
   <div id="app">
     <Navbar />
     <carousel />
-    <Demo />
+    <!-- <Demo /> -->
+    <ListOne/>
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
 import Carousel from "./components/Carousel.vue";
-import Demo from "./components/Demo.vue";
+// import Demo from "./components/Demo.vue";
+import ListOne from "./components/ListOne";
 export default {
   name: "app",
   components: {
     Carousel,
     Navbar,
-    Demo
+    // Demo,
+    ListOne
   }
 };
 </script>
