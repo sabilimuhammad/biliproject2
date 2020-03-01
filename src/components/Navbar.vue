@@ -101,10 +101,15 @@
         </ul>
       </div>
     </div>
+    <div>
+      <button type="button" @click="getAllPlanet">jamed</button>
+    </div>
   </nav>
 </template>
 
 <script>
+import  PlanetAPI from '../api/planetAPI';
+
 export default {
   data() {
     return {
@@ -130,9 +135,18 @@ export default {
   methods: {
     changeimg() {
       this.image1 = this.changeimg;
+    },
+    async getAllPlanet(){
+      try{
+        const response = await PlanetAPI.getAllPlanets();
+        console.log(response);
+      } 
+      catch (error){
+      console.log(error);
     }
-  }
-};
+  },
+}
+}
 </script>
 
 <style>
